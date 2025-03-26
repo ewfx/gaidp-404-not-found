@@ -1,0 +1,224 @@
+{
+  "/upload/pdf": {
+    "POST": {
+      "body": "multipart_form_data",
+      "repesonse": {
+        "data": {
+          "pdf_id": "string"
+        }
+      }
+    }
+  },
+  "/get/pdf": {
+    "POST": {
+      "response": {
+        "data": {
+          "pdf_ids": ["string"]
+        }
+      }
+    }
+  },
+  "/get/schema": {
+    "POST": {
+      "body": {
+        "pdf_id": "string"
+      },
+      "response": {
+        "data": {
+          "schemas": [
+            {
+              "pages": ["number"],
+              "schema_name": "string",
+              "id": "uuid"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "/update/schema": {
+    "POST": {
+      "body": {
+        "id": "schema_id",
+        "schema_name": "string",
+        "pages": []
+      }
+    }
+  },
+  "/get/columns": {
+    "POST": {
+      "body": {
+        "id": "schema_id"
+      },
+      "response": {
+        "data": {
+          "columns": ["string"]
+        }
+      }
+    }
+  },
+  "/update/columns": {
+    "POST": {
+      "body": {
+        "id": "schema_id",
+        "columns": ["string"]
+      },
+      "response": {
+        "data": {
+          "id": "schema_id",
+          "columns": []
+        }
+      }
+    }
+  },
+  "/get/rules": {
+    "POST": {
+      "body": {
+        "id": "schema_id"
+      },
+      "response": {
+        "data": {
+          "rules": [
+            {
+              "id": "rule_id",
+              "rule": "string",
+              "columns": ["string"]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "/update/rules": {
+    "POST": {
+      "body": {
+        "id": "schema_id",
+        "rules": [
+          {
+            "rule_id": "rule_id",
+            "rule": "string",
+            "columns": ["string"]
+          }
+        ]
+      }
+    }
+  },
+  "/generate/rules": {
+    "POST": {
+      "body": {
+        "schema_id": "string",
+        "id": "rule_id",
+        "prompt": "user_prompt"
+      },
+      "response": {
+        "data": {
+          "rule": {
+            "rule": "string",
+            "columns": ["string"]
+          }
+        }
+      }
+    }
+  },
+  "/generate/code_by_schema": {
+    "POST": {
+      "body": {
+        "schema_id": "string"
+      },
+      "response": {
+        "data": {
+          "codes": [
+            {
+              "rule_id": "rule_id",
+              "code_snippet": "code_snippet",
+              "columns_needed": ["string"],
+              "type": "record/batch"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "/generate/code_by_rule": {
+    "POST": {
+      "body": {
+        "rule_id": "string",
+        "prompt": "user_prompt"
+      },
+      "response": {
+        "data": {
+          "code": {
+            "rule_id": "rule_id",
+            "code_snippet": "code_snippet",
+            "columns_needed": ["string"],
+            "type": "record/batch"
+          }
+        }
+      }
+    }
+  },
+  "/update/code": {
+    "POST": {
+      "body": {
+        "schema_id": "string",
+        "code": {
+          "rule_id": "rule_id",
+          "code_snippet": "code_snippet",
+          "columns_needed": ["string"],
+          "category": "record/batch"
+        }
+      },
+      "repesonse": {
+        "data": {
+          "status": "200/404"
+        }
+      }
+    }
+  },
+  "/download/validator": {
+    "POST": {
+      "body": {
+        "schema_id": "string"
+      },
+      "repesonse": {
+        "data": {
+          "file": "validator.py"
+        }
+      }
+    }
+  },
+  "/upload/csv": {
+    "POST": {
+      "body": "multipart_form_data",
+      "response": {
+        "csv_id": "string"
+      }
+    }
+  },
+  "get/csv": {
+    "POST": {
+      "response": {
+        "csv_ids": [
+          {
+            "csv_id": "string",
+            "csv_name": "string"
+          }
+        ]
+      }
+    }
+  },
+  "validate/csv": {
+    "POST": {
+      "body": {
+        "csv_id": "string",
+        "schema_id": "string"
+      },
+      "response": {
+        "data": {
+          "record": {},
+          "batch": {}
+        }
+      }
+    }
+  }
+}

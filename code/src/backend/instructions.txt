@@ -1,0 +1,4 @@
+Create a env in python if needed -- python -m venv myenv 
+Activate it -- myenv\Scripts\activate
+Install dependencies in requirement.txt -- pip install -r requirements.txt
+Go to sambanova.ai and create a api and save it in .env file under name SAMBANOVA_API_KEy variable 

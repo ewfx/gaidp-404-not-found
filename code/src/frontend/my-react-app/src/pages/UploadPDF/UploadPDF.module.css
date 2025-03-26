@@ -1,0 +1,27 @@
+/**
+ * UploadPDF.module.css
+ * Location: src/pages/UploadPDF/UploadPDF.module.css
+ *
+ * Styles for the main UploadPDF page layout (2-column grid).
+ */
+
+ .uploadPdfContainer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 1rem;
+  padding: 1rem;
+  /* background-color: #f9f9f9;  // optional background */
+  min-height: calc(100vh - 120px); /* adjust for navbar/workflow height */
+}
+
+.leftColumn {
+  /* main content column */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.rightColumn {
+  /* empty placeholder for future features */
+}

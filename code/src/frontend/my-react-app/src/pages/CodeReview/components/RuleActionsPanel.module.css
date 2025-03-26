@@ -1,0 +1,45 @@
+.panel {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .saveButton,
+  .regenerateButton {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .saveButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .saveButton:hover:not(:disabled) {
+    background-color: #1565c0;
+  }
+  
+  .regenerateContainer {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .promptInput {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .regenerateButton:hover {
+    background-color: #1565c0;
+  }
+  

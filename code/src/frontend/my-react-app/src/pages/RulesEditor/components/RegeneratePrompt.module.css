@@ -1,0 +1,44 @@
+.promptContainer {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: #fafafa;
+    margin-top: 1rem;
+  }
+  
+  .ruleInfo {
+    margin-bottom: 1rem;
+  }
+  
+  .ruleDescription {
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .inputArea {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .promptInput {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .submitButton {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #1565c0;
+  }
+  

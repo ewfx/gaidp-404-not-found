@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: calc(100vh - 120px);
+  }
+  
+  .mainContent {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1rem;
+  }
+  
+  .leftColumn {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* The left column can expand as needed; the rules list inside will be fixed */
+  }
+  
+  .rightColumn {
+    background-color: #f1f8e9; /* light greenish background */
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    height: calc(100vh - 120px); /* fixed height to cover full available screen */
+  }
+  
+  .heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .addButton {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .addButton:hover {
+    background-color: #1565c0;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+  }
+  

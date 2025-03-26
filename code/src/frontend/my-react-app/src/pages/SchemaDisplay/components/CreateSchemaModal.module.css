@@ -1,0 +1,144 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .modalContent {
+    background: #fff;
+    width: 90%;
+    max-width: 1200px; /* Increase horizontal space for bigger pages */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .modalTitle {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .inputGroup {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .textInput {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .pdfPreview {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .pagesRow {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .pageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 0.3s, box-shadow 0.3s;
+    cursor: pointer; /* Let the user know the page is clickable */
+  }
+  
+  /* Gray out unselected pages */
+  .unselected {
+    opacity: 0.4;
+  }
+  
+  /* Add a hover effect for better feedback */
+  .pageWrapper:hover {
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  }
+  
+  .checkboxContainer {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Slightly bigger checkboxes for better UX */
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  /* Navigation row */
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 1rem;
+  }
+  
+  .navButton {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #1976d2;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .navButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .pageIndicator {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .cancelBtn,
+  .confirmBtn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .cancelBtn {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .confirmBtn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .confirmBtn:hover {
+    background-color: #45a049;
+  }
+  

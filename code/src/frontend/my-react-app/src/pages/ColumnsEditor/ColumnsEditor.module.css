@@ -1,0 +1,57 @@
+.container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 1rem;
+  padding: 1rem;
+  min-height: calc(100vh - 120px);
+}
+
+.leftColumn {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rightColumn {
+  /* Placeholder for future enhancements */
+}
+
+.heading {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.scrollableContainer {
+  max-height: 600px; /* Increased height for more columns */
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.actionButton {
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.actionButton:hover {
+  background-color: #1565c0;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}

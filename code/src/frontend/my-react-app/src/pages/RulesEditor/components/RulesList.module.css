@@ -1,0 +1,8 @@
+.rulesList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 550px; /* fixed height for about 3 rule cards */
+    overflow-y: auto;
+  }
+  

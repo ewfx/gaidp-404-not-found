@@ -1,0 +1,22 @@
+.toolbar {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  
+  .toolbarButton {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .toolbarButton:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,60 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 0.75rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .schemaName {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .pageNumbers {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #777;
+  }
+  
+  .cardActions {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .editBtn,
+  .selectBtn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.85rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .editBtn {
+    background-color: #ff9800;
+    color: #fff;
+  }
+  
+  .editBtn:hover {
+    background-color: #fb8c00;
+  }
+  
+  .selectBtn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .selectBtn:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,24 @@
+/* src/styles/pdfDefaults.css */
+
+/* TextLayer default styles */
+.textLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    pointer-events: none;
+    white-space: pre;
+  }
+  
+  /* AnnotationLayer default styles (example) */
+  .annotationLayer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+  }
+  

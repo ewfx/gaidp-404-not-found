@@ -1,0 +1,34 @@
+.homeContainer {
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p {
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.startButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  background-color: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.startButton:hover {
+  background-color: #276029;
+}

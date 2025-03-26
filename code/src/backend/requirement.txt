@@ -1,0 +1,11 @@
+pandas
+crewai
+pdfplumber 
+pandas 
+pdfminer.six 
+markdownify
+fastapi 
+uvicorn
+motor 
+beanie 
+pydantic

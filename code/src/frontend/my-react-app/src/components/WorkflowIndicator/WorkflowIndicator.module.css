@@ -1,0 +1,46 @@
+.workflowContainer {
+  background-color: #f1f8e9; /* light greenish background */
+  padding: 0.75rem 1.5rem;
+}
+
+.stepList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* center horizontally */
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  color: #555;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.2s, font-weight 0.2s;
+}
+
+.stepItem:hover {
+  color: #2e7d32;
+}
+
+.stepLabel {
+  margin-right: 0.25rem;
+}
+
+.arrow {
+  font-size: 1.2rem;
+  color: #999;
+  margin-left: 0.25rem;
+}
+
+.completed {
+  color: #2e7d32; /* green color for completed steps */
+}
+
+.active {
+  font-weight: 600;
+  color: #1b5e20; /* darker green for active step */
+}

@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    min-height: calc(100vh - 120px);
+  }
+  
+  .leftColumn,
+  .rightColumn {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leftColumn {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 2rem;
+  }
+  

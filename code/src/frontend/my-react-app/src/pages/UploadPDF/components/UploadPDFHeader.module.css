@@ -1,0 +1,35 @@
+/**
+ * UploadPDFHeader.module.css
+ * Location: src/pages/UploadPDF/components/UploadPDFHeader.module.css
+ *
+ * Styles for the top heading and upload button area.
+ */
+
+ .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .heading {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .uploadButton {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .uploadButton:hover {
+    background-color: #1565c0;
+  }
+  

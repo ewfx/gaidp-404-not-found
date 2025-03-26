@@ -1,0 +1,82 @@
+/**
+ * DragDropModal.module.css
+ * Location: src/pages/UploadPDF/components/DragDropModal.module.css
+ *
+ * Styles for the drag & drop modal overlay and content.
+ */
+
+ .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  
+  .modalContent {
+    background: #fff;
+    width: 400px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  .modalTitle {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .dragDropArea {
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .dragActive {
+    border-color: #4caf50;
+  }
+  
+  .fileInput {
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .cancelBtn,
+  .uploadBtn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .cancelBtn {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .uploadBtn {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .uploadBtn:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,20 @@
+/**
+ * ExistingPDFList.module.css
+ * Location: src/pages/UploadPDF/components/ExistingPDFList.module.css
+ */
+
+ .listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    height: 600px;
+    overflow-y: auto;
+
+  }
+  
+  .noResults {
+    color: #777;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+  
