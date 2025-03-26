@@ -181,6 +181,7 @@ Ensure you have the following installed:
 1. Create a `.env` file in the `backend` directory and add the following:
    ```env
    SAMBANOVA_API_KEY=your_api_key_here
+   MONGO_DB_URL=your_mongo_connection_string
    ```
 
 #### **Step 4: Run the Backend**
@@ -203,7 +204,7 @@ Ensure you have the following installed:
 #### **Step 2: Install Dependencies**
 1. Install the required Node.js packages:
    ```bash
-   npm install
+   npm install --force
    ```
 
 #### **Step 3: Run the Frontend**
